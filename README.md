@@ -1,8 +1,8 @@
 # This is a beta version of LMNAs Unified Marketing Platform using Next.js, Grape.js and Destack
 
-The beta version of LUMP is aimed at creating a Fully functional and Profession Blog Static Blog site under 15 minutes.
+The beta version of LUMP is aimed at creating a Fully functional and Professional Static Blog site under 15 minutes.
 
-The blog posts are stored in `/_posts` as Markdown files. By adding a new Markdown file, Content creators can will create a new blog post.
+By adding a new Markdown file, Content creators can create a new blog post. The blog posts are stored in `/_posts` as Markdown files.
 
 ## Preview
 
