@@ -1,7 +1,9 @@
 {
+  "name": "lump-beta",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "export": "next export",
     "build": "next build",
     "start": "next start"
