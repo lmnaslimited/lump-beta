@@ -131,6 +131,7 @@ const options = {
     }
     if (attribs.alt === 'cover-image') {
        attribs.src = process.env.BACKEND_URL + post.coverImage
+       console.log(attribs.src)
 
     }
     if (attribs.id === 'author') {
