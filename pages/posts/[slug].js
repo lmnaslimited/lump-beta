@@ -130,7 +130,7 @@ const options = {
 
     }
     if (attribs.alt === 'cover-image') {
-       attribs.src = post.coverImage
+       attribs.src = process.env.BACKEND_URL + post.coverImage
 
     }
     if (attribs.id === 'author') {
@@ -143,7 +143,7 @@ const options = {
 
     }
     if (attribs.alt === 'author-image') {
-      attribs.src = post.author.picture
+      attribs.src = process.env.BACKEND_URL + post.author.picture
 
     } 
    }  
