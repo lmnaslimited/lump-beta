@@ -16,6 +16,7 @@ import { HtmlContext } from 'next/dist/shared/lib/utils'
 import { renderToString } from 'react-dom/server'
 
 export default function Post({ post, morePosts, preview }) {
+  console.log('from Post')
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -50,6 +51,7 @@ export default function Post({ post, morePosts, preview }) {
 }
 
 export async function getStaticProps({ params }) {
+  console.log('from Props')
   const post = getPostBySlug(params.slug, [
     'title',
     'date',
@@ -83,10 +85,9 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
+  console.log('frompaths')
   const posts = getAllPosts(['slug'])
-
-  return {
-    paths: posts.map((post) => {
+  return{ paths: posts.map((post) => {
       return {
         params: {
           slug: post.slug,
@@ -131,7 +132,6 @@ const options = {
     }
     if (attribs.alt === 'cover-image') {
        attribs.src = process.env.BACKEND_URL + post.coverImage
-       console.log(attribs.src)
 
     }
     if (attribs.id === 'author') {

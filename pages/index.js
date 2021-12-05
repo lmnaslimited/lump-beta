@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
+import Image from 'next/image'
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0]
